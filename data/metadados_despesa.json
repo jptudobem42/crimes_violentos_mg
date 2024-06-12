@@ -1,0 +1,368 @@
+[
+    {
+        "last_modified": "2024-01-15T07:53:55.146387",
+        "name": "Unidade Orçamentária",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/73dc1c25-3cb7-4ccb-b841-400cee4fd097/download/dm_unidade_orc.csv.gz",
+        "size": 26250
+    },
+    {
+        "last_modified": "2024-01-26T07:51:30.645131",
+        "name": "Função",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/0ef92504-f6b0-4967-ba38-09cf5e025ba5/download/dm_funcao_desp.csv.gz",
+        "size": 4804
+    },
+    {
+        "last_modified": "2024-01-26T07:51:31.561829",
+        "name": "Subfunção",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/362b576b-5535-4ad2-a524-ef90323b0566/download/dm_subfuncao_desp.csv.gz",
+        "size": 14820
+    },
+    {
+        "last_modified": "2023-11-28T12:07:31.727541",
+        "name": "Calendário - Dias",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/4126b05a-4595-4b9b-8f51-101a1b859264/download/dm_tempo_diario.csv.gz",
+        "size": 422039
+    },
+    {
+        "last_modified": "2023-11-28T12:07:32.108997",
+        "name": "Tipo Documento",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/9d9383ac-4939-4a82-8595-418cef4772ef/download/dm_tipo_documento.csv.gz",
+        "size": 1421
+    },
+    {
+        "last_modified": "2024-01-28T08:10:58.617847",
+        "name": "Item de Despesa",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/af55cfa3-1445-4daa-b28a-fa85cb1ca756/download/dm_item_desp.csv.gz",
+        "size": 10267
+    },
+    {
+        "last_modified": "2024-01-26T07:51:31.071647",
+        "name": "Programa",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c22189ab-766d-4dfc-a693-db95625e3f7e/download/dm_programa.csv.gz",
+        "size": 63241
+    },
+    {
+        "last_modified": "2024-06-11T21:28:30.931039",
+        "name": "Ação Orçamentária",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/e0b87388-6272-4f56-a3e8-4952d77722d6/download/dm_acao.csv.gz",
+        "size": 54
+    },
+    {
+        "last_modified": "2024-06-11T21:28:31.937295",
+        "name": "Empenho Despesa 2002",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/00a09c20-0af9-4f27-8b5f-c1e68d18162f/download/dm_empenho_desp_2002.csv.gz",
+        "size": 8842825
+    },
+    {
+        "last_modified": "2024-06-11T21:28:32.787136",
+        "name": "Empenho Despesa 2003",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/5f94fead-de22-4c1b-8b76-7232268f0db5/download/dm_empenho_desp_2003.csv.gz",
+        "size": 8277434
+    },
+    {
+        "last_modified": "2024-06-11T21:28:33.604463",
+        "name": "Empenho Despesa 2004",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/80da1eb2-c032-4a85-b321-cb0c92d230b8/download/dm_empenho_desp_2004.csv.gz",
+        "size": 8609175
+    },
+    {
+        "last_modified": "2024-06-11T21:28:35.661607",
+        "name": "Empenho Despesa 2005",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/e8bebc5a-1efe-4d4d-8d7b-796f51571158/download/dm_empenho_desp_2005.csv.gz",
+        "size": 9516765
+    },
+    {
+        "last_modified": "2024-06-11T21:28:36.703768",
+        "name": "Empenho Despesa 2006",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/51c08fc8-80cb-44c8-97e5-f22291f85e9b/download/dm_empenho_desp_2006.csv.gz",
+        "size": 10617575
+    },
+    {
+        "last_modified": "2024-06-11T21:28:37.761550",
+        "name": "Empenho Despesa 2007",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c34d5163-0b0c-4d1c-985c-122e848d304d/download/dm_empenho_desp_2007.csv.gz",
+        "size": 11088126
+    },
+    {
+        "last_modified": "2024-06-11T21:28:38.853613",
+        "name": "Empenho Despesa 2008",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/e6c7a71e-e4be-427f-9509-97ece05d1efd/download/dm_empenho_desp_2008.csv.gz",
+        "size": 14154864
+    },
+    {
+        "last_modified": "2024-06-11T21:28:39.947483",
+        "name": "Empenho Despesa 2009",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/249ac3ba-2c72-473f-b846-436df6d1a54c/download/dm_empenho_desp_2009.csv.gz",
+        "size": 12617385
+    },
+    {
+        "last_modified": "2024-06-11T21:28:41.909654",
+        "name": "Empenho Despesa 2010",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/682c99de-d2ea-4f02-b798-683fefca9085/download/dm_empenho_desp_2010.csv.gz",
+        "size": 11488104
+    },
+    {
+        "last_modified": "2024-06-11T21:28:44.109383",
+        "name": "Empenho Despesa 2011",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/ae08f9d8-c744-484d-b3be-82484f4c5b97/download/dm_empenho_desp_2011.csv.gz",
+        "size": 13876159
+    },
+    {
+        "last_modified": "2024-06-11T21:28:45.392586",
+        "name": "Empenho Despesa 2012",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c9f24c4c-e66a-4e1a-b717-a29c46249416/download/dm_empenho_desp_2012.csv.gz",
+        "size": 17190232
+    },
+    {
+        "last_modified": "2024-06-11T21:28:46.583356",
+        "name": "Empenho Despesa 2013",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/b347e218-133c-4792-8a0d-1cfc9bedd0ae/download/dm_empenho_desp_2013.csv.gz",
+        "size": 16046724
+    },
+    {
+        "last_modified": "2024-06-11T21:28:48.642041",
+        "name": "Empenho Despesa 2014",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/f3c852da-7b5a-49b3-96d1-880dde4da548/download/dm_empenho_desp_2014.csv.gz",
+        "size": 12475703
+    },
+    {
+        "last_modified": "2024-06-11T21:28:49.691371",
+        "name": "Empenho Despesa 2015",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/8ba00e1c-3eff-4264-9245-3ce2d9e19b2c/download/dm_empenho_desp_2015.csv.gz",
+        "size": 11764845
+    },
+    {
+        "last_modified": "2024-06-11T21:28:50.693258",
+        "name": "Empenho Despesa 2016",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/21d040b9-ae09-48cb-b607-9cfbfb6f498e/download/dm_empenho_desp_2016.csv.gz",
+        "size": 9563829
+    },
+    {
+        "last_modified": "2024-06-11T21:28:51.399991",
+        "name": "Empenho Despesa 2017",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/4d6176b1-3db5-4fa9-9eb0-f7a195c69fc5/download/dm_empenho_desp_2017.csv.gz",
+        "size": 6156092
+    },
+    {
+        "last_modified": "2024-06-11T21:28:52.021197",
+        "name": "Empenho Despesa 2018",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/1c38e7f0-df32-4881-bbd0-969ee6eb2e3a/download/dm_empenho_desp_2018.csv.gz",
+        "size": 4211088
+    },
+    {
+        "last_modified": "2024-06-11T21:28:53.690186",
+        "name": "Empenho Despesa 2019",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/a72ec12b-502e-49c8-96fc-7a1d25448be0/download/dm_empenho_desp_2019.csv.gz",
+        "size": 5250418
+    },
+    {
+        "last_modified": "2024-06-11T21:28:54.323331",
+        "name": "Empenho Despesa 2020",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/a45f32cc-d979-47cb-95d6-fa35a7054420/download/dm_empenho_desp_2020.csv.gz",
+        "size": 4756708
+    },
+    {
+        "last_modified": "2024-06-11T21:28:56.023970",
+        "name": "Empenho Despesa 2021",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c2c613e7-000b-4deb-bd57-79e6748805d6/download/dm_empenho_desp_2021.csv.gz",
+        "size": 6529160
+    },
+    {
+        "last_modified": "2024-06-11T21:29:04.609953",
+        "name": "Empenho Despesa 2022",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/16816878-7957-4b3a-b29e-af535b3bb8f3/download/dm_empenho_desp_2022.csv.gz",
+        "size": 7857920
+    },
+    {
+        "last_modified": "2024-06-11T21:29:05.426355",
+        "name": "Empenho Despesa 2023",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/1c81a9f6-3010-47b3-a14c-ceaa7c9ab8c2/download/dm_empenho_desp_2023.csv.gz",
+        "size": 7961316
+    },
+    {
+        "last_modified": "2024-06-11T21:28:57.411753",
+        "name": "Favorecido",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/aba3e7ba-8434-4b67-b02b-dee64db9d412/download/dm_favorecido.csv.gz",
+        "size": 21788354
+    },
+    {
+        "last_modified": "2024-06-12T06:50:50.192745",
+        "name": "Despesa - Ordem de Pagamento",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/ee60f109-0bd2-43e2-80d1-f5d2a93b167d/download/fl_despesa_pgto.csv.gz",
+        "size": 53073546
+    },
+    {
+        "last_modified": "2024-01-15T07:53:54.713021",
+        "name": "Fonte de Recurso",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c892e25e-4de2-4a3f-816c-3f783a272b33/download/dm_fonte.csv.gz",
+        "size": 3216
+    },
+    {
+        "last_modified": "2023-11-28T12:07:28.530040",
+        "name": "Grupo de natureza da despesa",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/f61b5244-b6c4-4b18-8511-f46e5e9dc596/download/dm_grupo_desp.csv.gz",
+        "size": 224
+    },
+    {
+        "last_modified": "2023-11-28T12:07:29.445712",
+        "name": "Modalidade de Aplicação",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/4180297d-0931-48d4-b5cc-71ed8e051196/download/dm_modalidade_aplic.csv.gz",
+        "size": 620
+    },
+    {
+        "last_modified": "2024-06-11T21:28:57.965271",
+        "name": "Identificador de procedência e uso (IPU)",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/d8d1930b-864a-44d9-a496-043113cd70f0/download/dm_procedencia.csv.gz",
+        "size": 689
+    },
+    {
+        "last_modified": "2023-11-28T12:07:38.996538",
+        "name": "Despesa 2002",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/57cbdb60-ce07-4b10-af30-6944cdcfce12/download/ft_despesa_2002.csv.gz",
+        "size": 49698808
+    },
+    {
+        "last_modified": "2023-11-28T12:07:41.539450",
+        "name": "Despesa 2003",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/a7f0cb93-750b-44d4-9682-8027b890499a/download/ft_despesa_2003.csv.gz",
+        "size": 41943486
+    },
+    {
+        "last_modified": "2023-11-28T12:07:44.145025",
+        "name": "Despesa 2004",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/b08c4fbe-ebbd-4a9d-af6c-d89aff159049/download/ft_despesa_2004.csv.gz",
+        "size": 42757717
+    },
+    {
+        "last_modified": "2023-11-28T12:07:47.452188",
+        "name": "Despesa 2005",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/96e823ba-f791-4c5b-9811-38086edf870d/download/ft_despesa_2005.csv.gz",
+        "size": 57961888
+    },
+    {
+        "last_modified": "2023-11-28T12:07:50.994289",
+        "name": "Despesa 2006",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/b1a0ebd2-4a56-4e0f-b6af-4978a9296d0a/download/ft_despesa_2006.csv.gz",
+        "size": 58629583
+    },
+    {
+        "last_modified": "2023-11-28T12:07:54.461216",
+        "name": "Despesa 2007",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/cceefd07-ce82-474a-977e-069b3b5d60ea/download/ft_despesa_2007.csv.gz",
+        "size": 61643422
+    },
+    {
+        "last_modified": "2023-11-28T12:07:58.577245",
+        "name": "Despesa 2008",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/76dbaa3d-e024-419b-a4bd-1d9b79bb014f/download/ft_despesa_2008.csv.gz",
+        "size": 72902820
+    },
+    {
+        "last_modified": "2023-11-28T12:08:02.653716",
+        "name": "Despesa 2009",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/76d2efdd-da6d-4c32-90b2-7a7b7be11bf3/download/ft_despesa_2009.csv.gz",
+        "size": 69115512
+    },
+    {
+        "last_modified": "2023-11-28T12:08:06.353209",
+        "name": "Despesa 2010",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/646f7650-c090-4f57-92e0-f2965cc1b866/download/ft_despesa_2010.csv.gz",
+        "size": 61948288
+    },
+    {
+        "last_modified": "2023-11-28T12:08:10.136446",
+        "name": "Despesa 2011",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/a46a3249-c9e9-4c85-9ec8-98e6c7834c3a/download/ft_despesa_2011.csv.gz",
+        "size": 63160878
+    },
+    {
+        "last_modified": "2023-11-28T12:08:14.343435",
+        "name": "Despesa 2012",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/0a1927b7-caac-4053-ab2a-f27c4e7083e9/download/ft_despesa_2012.csv.gz",
+        "size": 72872626
+    },
+    {
+        "last_modified": "2023-11-28T12:08:18.149407",
+        "name": "Despesa 2013",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/242ea92f-fe34-44db-a38a-af20677d23ff/download/ft_despesa_2013.csv.gz",
+        "size": 64903065
+    },
+    {
+        "last_modified": "2023-11-28T12:08:21.531249",
+        "name": "Despesa 2014",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/5d51d25c-f27f-43ca-8a5f-e8628cf75966/download/ft_despesa_2014.csv.gz",
+        "size": 56478490
+    },
+    {
+        "last_modified": "2023-11-28T12:08:24.798465",
+        "name": "Despesa 2015",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/39c5f1c4-bc73-44e2-a509-2469636fb504/download/ft_despesa_2015.csv.gz",
+        "size": 53660557
+    },
+    {
+        "last_modified": "2023-11-28T12:08:27.603543",
+        "name": "Despesa 2016",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/746b4ff8-517d-4099-be7f-6287e6c92e03/download/ft_despesa_2016.csv.gz",
+        "size": 47785144
+    },
+    {
+        "last_modified": "2023-11-28T12:08:29.890078",
+        "name": "Despesa 2017",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/20bf7b57-3c26-4141-b38a-16eb5d077e82/download/ft_despesa_2017.csv.gz",
+        "size": 38389028
+    },
+    {
+        "last_modified": "2023-11-28T12:08:31.783830",
+        "name": "Despesa 2018",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/427e83ea-34ed-4828-bbe6-b99ef3715e15/download/ft_despesa_2018.csv.gz",
+        "size": 29175956
+    },
+    {
+        "last_modified": "2023-11-28T12:08:34.137234",
+        "name": "Despesa 2019",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/080d867b-56df-447d-bba1-44d6a180509d/download/ft_despesa_2019.csv.gz",
+        "size": 39162024
+    },
+    {
+        "last_modified": "2023-11-28T12:08:36.276005",
+        "name": "Despesa 2020",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/bd516907-beeb-44db-a876-60de9c5972e3/download/ft_despesa_2020.csv.gz",
+        "size": 34240584
+    },
+    {
+        "last_modified": "2023-11-28T12:08:38.847967",
+        "name": "Despesa 2021",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/c1c468f8-95af-4cd5-b0d4-0b1c5f2062af/download/ft_despesa_2021.csv.gz",
+        "size": 42437970
+    },
+    {
+        "last_modified": "2024-01-04T08:13:55.247964",
+        "name": "Despesa 2022",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/09fda2ff-c228-454a-af0d-a3e6e05d5900/download/ft_despesa_2022.csv.gz",
+        "size": 48223226
+    },
+    {
+        "last_modified": "2024-06-12T06:50:53.276573",
+        "name": "Despesa 2023",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/f1bf68b2-32ee-4c1b-a129-d6e06956a286/download/ft_despesa_2023.csv.gz",
+        "size": 55140534
+    },
+    {
+        "last_modified": "2023-11-28T12:07:30.821640",
+        "name": "Situação Ordem de Pagamento",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/0602cdb0-da81-4c7a-9bfa-314d26e9d7c0/download/dm_situacao_op_desp.csv.gz",
+        "size": 366
+    },
+    {
+        "last_modified": "2023-11-28T12:07:06.527391",
+        "name": "Categoria Econômica",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/1cf6d16c-ff09-466e-b313-f7f62e39fbe4/download/dm_categ_econ.csv.gz",
+        "size": 124
+    },
+    {
+        "last_modified": "2023-11-28T12:07:07.054686",
+        "name": "Elemento de Despesa",
+        "url": "https://dados.mg.gov.br/dataset/eb709e1d-c19e-4371-b1ea-436920cf537a/resource/d77b048b-7467-4520-86b4-dabacdb69bce/download/dm_elemento_desp.csv.gz",
+        "size": 1852
+    }
+]
