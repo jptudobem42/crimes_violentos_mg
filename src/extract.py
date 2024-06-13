@@ -7,11 +7,16 @@ import json
 import unicodedata
 import time
 import psutil
+import logging
 
 from pathlib import Path
 from tqdm import tqdm
 from datetime import datetime
 from tenacity import retry, stop_after_attempt, wait_fixed, RetryError
+#%%
+# Configuração do logger
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 #%%
 def normalize_text(name):
     """Normaliza o texto para nomes de arquivos e diretórios.
@@ -110,13 +115,13 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
             last_modified_dt = datetime.strptime(last_modified, '%Y-%m-%dT%H:%M:%S.%f')
 
             if last_modified_dt <= previous_last_modified_dt:
-                print(f"Arquivo {url} não foi atualizado.")
+                logger.info(f"Arquivo {url} não foi atualizado.")
                 continue
 
-        print(f"Fazendo o download do arquivo {url} para {output_dir}")
+        logger.info(f"Fazendo o download do arquivo {url} para {output_dir}")
         try:
             download_and_extract(url, output_dir)
-            print(f"Arquivo extraído para {output_dir}")
+            logger.info(f"Arquivo extraído para {output_dir}")
 
             # Atualiza o registro nos metadados
             existing_metadata_dict[url] = {
@@ -126,25 +131,19 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
                 'size': resource.get('size')
             }
         except RetryError as e:
-            print(f"Falha ao baixar o arquivo {url} após múltiplas tentativas: {e}")
+            logger.error(f"Falha ao baixar o arquivo {url} após múltiplas tentativas: {e}")
             continue
 
     # Salvar os metadados
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump(list(existing_metadata_dict.values()), f, ensure_ascii=False, indent=4)
 #%%
-# Monitoramento de tempo e memória
-#start_time = time.time()
-#process = psutil.Process(os.getpid())
-#initial_memory = process.memory_info().rss
-
-api_url = 'https://dados.mg.gov.br/api/3/action/package_show?id=despesa'
-base_output_directory = '../data/raw/'
-metadata_file = '../data/metadados_despesa.json'
-fetch_and_process(api_url, base_output_directory, metadata_file)
-
-#end_time = time.time()
-#final_memory = process.memory_info().rss
-
-#print(f"Tempo de execução: {end_time - start_time} segundos")
-#print(f"Uso de memória: {(final_memory - initial_memory) / 1024 / 1024} MB")
+def main(api_url, base_output_dir, metadata_file):
+    start_time = time.time()
+    process = psutil.Process(os.getpid())
+    initial_memory = process.memory_info().rss
+    fetch_and_process(api_url, base_output_dir, metadata_file)
+    end_time = time.time()
+    final_memory = process.memory_info().rss
+    logger.info(f"Tempo de execução: {end_time - start_time} segundos")
+    logger.info(f"Uso de memória: {(final_memory - initial_memory) / 1024 / 1024} MB")

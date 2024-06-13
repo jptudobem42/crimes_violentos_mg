@@ -1,1 +1,6 @@
+__pycache__/
+*.parquet
+*.pkl
 *.csv
+*.json
+*.xls*
