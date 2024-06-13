@@ -2,11 +2,16 @@
 import os
 import urllib.request
 import gzip
-from pathlib import Path
+import requests
 import json
 import unicodedata
+import time
+import psutil
+
+from pathlib import Path
 from tqdm import tqdm
 from datetime import datetime
+from tenacity import retry, stop_after_attempt, wait_fixed, RetryError
 #%%
 def normalize_text(name):
     """Normaliza o texto para nomes de arquivos e diretórios.
@@ -34,6 +39,7 @@ def normalize_text(name):
     return normalized_name
 
 #%%
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def download_and_extract(url, output_dir):
     """Baixa e extrai um arquivo compactado de um URL.
 
@@ -42,15 +48,24 @@ def download_and_extract(url, output_dir):
         output_dir (str): O diretório onde o arquivo extraído será salvo.
     """
 
+    # Download (Urllib)
     local_path = Path(output_dir) / Path(url).name
     urllib.request.urlretrieve(url, local_path)
 
+    # Download (requests)
+    #with requests.get(url, stream=True) as response:
+    #    response.raise_for_status()
+    #    with open(local_path, 'wb') as f:
+    #        for chunk in response.iter_content(chunk_size=8192):
+    #            if chunk:
+    #                f.write(chunk)
+
+    # Extract
     with gzip.open(local_path, 'rb') as f_in:
         with open(local_path.with_suffix(''), 'wb') as f_out:
             f_out.write(f_in.read())
 
     os.remove(local_path)
-
 #%%
 def fetch_and_process(api_url, base_output_dir, metadata_file):
     """Busca dados de uma API, processa-os e baixa arquivos relevantes.
@@ -62,14 +77,14 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
     """
 
     # Carrega os metadados existentes ou cria uma lista vazia se ela não existir
-    existing_metadata = []
     if os.path.exists(metadata_file):
         with open(metadata_file, 'r', encoding='utf-8') as f:
             existing_metadata = json.load(f)
+    else:
+        existing_metadata = []
 
     # Cria um dicionário para pesquisas por URL
     existing_metadata_dict = {item['url']: item for item in existing_metadata}
-
     with urllib.request.urlopen(api_url) as response:
         data = json.loads(response.read().decode())
 
@@ -99,22 +114,37 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
                 continue
 
         print(f"Fazendo o download do arquivo {url} para {output_dir}")
-        download_and_extract(url, output_dir)
-        print(f"Arquivo extraído para {output_dir}")
+        try:
+            download_and_extract(url, output_dir)
+            print(f"Arquivo extraído para {output_dir}")
 
-        # Atualiza o registro nos metadados
-        existing_metadata_dict[url].update({
-            'last_modified': last_modified,
-            'name': name,
-            'size': resource.get('size')
-        })
+            # Atualiza o registro nos metadados
+            existing_metadata_dict[url] = {
+                'last_modified': last_modified,
+                'name': name,
+                'url': url,
+                'size': resource.get('size')
+            }
+        except RetryError as e:
+            print(f"Falha ao baixar o arquivo {url} após múltiplas tentativas: {e}")
+            continue
 
     # Salvar os metadados
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump(list(existing_metadata_dict.values()), f, ensure_ascii=False, indent=4)
 #%%
+# Monitoramento de tempo e memória
+#start_time = time.time()
+#process = psutil.Process(os.getpid())
+#initial_memory = process.memory_info().rss
+
 api_url = 'https://dados.mg.gov.br/api/3/action/package_show?id=despesa'
 base_output_directory = '../data/raw/'
 metadata_file = '../data/metadados_despesa.json'
 fetch_and_process(api_url, base_output_directory, metadata_file)
-# %%
+
+#end_time = time.time()
+#final_memory = process.memory_info().rss
+
+#print(f"Tempo de execução: {end_time - start_time} segundos")
+#print(f"Uso de memória: {(final_memory - initial_memory) / 1024 / 1024} MB")
