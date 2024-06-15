@@ -95,7 +95,7 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
 
     resources = data.get('result', {}).get('resources', [])
 
-    for resource in tqdm(resources):
+    for resource in tqdm(resources, desc="Baixando arquivos"):
         url = resource.get('url')
         name = resource.get('name')
         last_modified = resource.get('last_modified')
@@ -118,11 +118,9 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
                 logger.info(f"Arquivo {url} não foi atualizado.")
                 continue
 
-        logger.info(f"Fazendo o download do arquivo {url} para {output_dir}")
+        #logger.info(f"Fazendo o download do arquivo {url} para {output_dir}")
         try:
             download_and_extract(url, output_dir)
-            logger.info(f"Arquivo extraído para {output_dir}")
-
             # Atualiza o registro nos metadados
             existing_metadata_dict[url] = {
                 'last_modified': last_modified,
@@ -139,11 +137,11 @@ def fetch_and_process(api_url, base_output_dir, metadata_file):
         json.dump(list(existing_metadata_dict.values()), f, ensure_ascii=False, indent=4)
 #%%
 def main(api_url, base_output_dir, metadata_file):
-    start_time = time.time()
-    process = psutil.Process(os.getpid())
-    initial_memory = process.memory_info().rss
+    #start_time = time.time()
+    #process = psutil.Process(os.getpid())
+    #initial_memory = process.memory_info().rss
     fetch_and_process(api_url, base_output_dir, metadata_file)
-    end_time = time.time()
-    final_memory = process.memory_info().rss
-    logger.info(f"Tempo de execução: {end_time - start_time} segundos")
-    logger.info(f"Uso de memória: {(final_memory - initial_memory) / 1024 / 1024} MB")
+    #end_time = time.time()
+    #final_memory = process.memory_info().rss
+    #logger.info(f"Tempo de execução: {end_time - start_time} segundos")
+    #logger.info(f"Uso de memória: {(final_memory - initial_memory) / 1024 / 1024} MB")
